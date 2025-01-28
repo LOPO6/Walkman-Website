@@ -1,0 +1,880 @@
+@charset "UTF-8"; 
+
+
+@font-face {
+    font-family: lessonFont;
+    src: url("../fonts/Orbitron-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Anta;
+    src: url("../fonts/Anta/Anta-Regular.ttf");
+}
+@font-face {
+    font-family: Antonio;
+    src: url("../fonts/Antonio/Antonio-VariableFont_wght.ttf");
+}
+
+
+html{
+    background-color: white;
+    scroll-behavior: smooth;}
+
+body{
+    height:auto;
+    width:auto;
+    margin:0;
+}
+header{
+    width: 100%;
+    height: 70px;
+    position:relative;
+    background-color: #0e0e0e;
+    display: flex;
+    align-items: center;
+    transition: all .25s linear;
+    font-family: Anta;
+    
+    
+  }
+   
+  header div{
+    width:auto;
+    height:115px;
+    flex-grow: 1;
+
+  }
+  
+  header div a img{
+    width: auto;
+    height: 30%;
+    padding-top: 40px;
+    padding-left:8.5em;
+    
+  }
+  
+  header nav menu{
+    list-style: none;
+    display:flex;
+    margin: 0px;
+    padding-right:8.5em;
+    
+  }
+  
+  
+  header nav menu li{
+    font-size:1.5em;
+    padding: 0px 10px;}
+
+  header > nav > menu > li > a {
+    color:white;
+    text-decoration: none;
+  }
+
+  header > nav > menu >li > a:hover{
+    font-size:1.25em;
+    transition: font-size .25s ease;
+
+  }
+
+    .masthead{
+        background-image: url("../images/multiple-walkmans.png");
+        background-size: cover;
+        background-attachment: fixed;
+        width: auto;
+        height: 100vh;
+        
+      }
+      .masthead div{
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .masthead div h1{
+        font-size: 3em;
+        color: #0e0e0e;
+        background-color:#f8f8f8;
+        opacity: 90%;
+        padding: 5px;
+        text-transform:uppercase;
+        font-family: Anta;
+      }
+#title {
+    padding-top:1.5em;
+    padding-bottom:2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:1em;
+    font-family: Anta;
+}
+footer{
+    background-color: #0e0e0e;
+    color:white;
+}
+
+.cta{
+    height:40em;
+    width:90%;
+    background-size: cover;
+    background-position:center;
+    border-radius: 10px;
+    
+    
+
+  }
+  
+  .cta-1{
+    background-image: url("../images/walkman-1.png");
+    
+  }
+  .cta-2{
+    background-image: url("../images/walkman-add.png");
+  }
+  .cta-3{
+    background-image: url("../images/walkman-3.png");
+  }
+  
+  .cta > div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: lessonFont;
+    
+    transition: all .25s ease-in-out;
+  }
+  
+  .cta>div label{
+    font-size: 2em;
+    color: #f8f8f8;
+    border: solid 2px rgba(14,14,14,0);
+    padding: 15px 45px;
+    border-radius: 5px;
+    
+    
+    transition: all .25s ease-in-out;
+  }
+  .cta> div:hover{
+    background-color: rgba(248,248,230,0.25)
+    
+  
+  }
+  
+  .cta > div:hover label{
+    color: #0e0e0e;
+
+  }
+  .modal{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    background: rgba(0,0,0,0);
+    transition: opacity .25s ease;
+  }
+  
+  
+  
+ 
+  
+ 
+  .container {
+    display: grid;
+    place-items: center; 
+    height: 100vh; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    margin-top: 40px;
+    padding: 0.5em 4.5em;
+  }
+  footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left:6.5em;
+}
+
+.footer-logo img {
+    width: 100px; 
+    margin-right:12.5em;
+}
+
+.footer-section {
+    margin: 0 2.75em;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    text-align:left;
+    padding-left: 6.75em;
+    font-family: lessonFont;
+    
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    display: inline; 
+    margin-right: 40px;
+
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links li {
+    margin-right: 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    font-size: 20px;
+}
+.social-links img{
+    width:auto;
+    height:30px;
+}
+.social-links img:hover{
+    transition: background-color .25s ease;
+    border-radius: 5px;
+
+}
+
+.fab-fa-facebook-f img:hover{
+    background-color: skyblue;
+    
+}
+.fab-fa-youtube img:hover{
+    background-color: red;
+    
+}
+.fab-fa-twitter img:hover{
+    background-color: skyblue;
+    
+}
+
+.fab-fa-tumblr img:hover{
+    background-color: navy;
+    
+}
+.fab-fa-instagram img:hover{
+    background-color: pink;
+    
+}
+.ctaButton{
+    width:auto;
+    font-size:2.5em;
+    color:black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius:10px;
+    background-color: white;
+
+}
+
+.ctaButton:hover{
+    background-color: black;
+    border-radius: 10px;
+    transition: background-color .25s ease;
+    color:white;
+    
+
+}
+
+.site-links li:hover{
+    font-size:1.25em;
+    transition: font-size .25s ease;
+
+}
+.titleText h1{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size:3.0em;
+    margin-top:2.5em;
+}
+
+.bodyparagraph{
+    display: flex; 
+    align-items: flex-start; 
+    padding-left:7.5em;
+    padding-right:7.5em;
+    padding-bottom:2.5em;
+    opacity: 0;
+    animation: fadeIn 5s ease-out forwards;
+    font-family: Antonio;
+}
+
+.bodyparagraph h1{
+    margin-right: 4.5em;
+    font-family: Anta;
+    font-size: 1.25em;
+    
+}
+
+
+
+.bodyparagraph img{
+    width: auto; 
+  height: 30.5em; 
+  margin-left:2.5em;
+}
+
+
+.bodyparagraph2{
+    display: flex; 
+    align-items: flex-start; 
+    padding-left:7.5em;
+    padding-right:7.5em;
+    padding-top:2.5em;
+    opacity: 0;
+    animation: fadeIn 5s ease-out forwards;
+    font-family: Antonio;
+    
+}
+
+.bodyparagraph2 h1{
+    margin-left:10px;
+    font-family: Anta;
+    font-size: 2.1em;
+    
+    
+}
+.funnycontainer{
+    display: flex;
+    flex-direction:column;
+
+}
+
+
+
+
+
+
+.funtext h1{ 
+    position: relative; 
+    display: flex;
+    align-items: flex-start;
+    position: absolute; 
+    top: -20px; 
+    left: 0;
+    font-family: Anta;
+  }
+
+.bodyparagraph2 img{
+    width: auto; 
+  height: 31.5em; 
+  margin-right:30px;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.videoAdd{
+    display: flex;
+      justify-content: center; 
+      height: 100vh; 
+
+}
+.bodyparagraph iframe{
+    width: 5080px; 
+    height:400px;
+    padding-right:4.5em;
+}
+
+.line img{
+    width:80.5em;
+    height:5px;
+    margin-left:7.5em;
+    border-radius: 10px;
+
+}
+
+
+.line2 img{
+    width:80.5em;
+    height:5px;
+    margin-left:7.5em;
+    border-radius: 10px;
+    margin-top:4.5em;
+
+}
+
+
+.masthead2{
+    background-image: url("../images/sony-walkman-minimal-4k-1z.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 100vh;
+    
+  }
+  .masthead2 div{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .masthead2 div h1{
+    font-size: 3em;
+    color: #0e0e0e;
+    background-color:#f8f8f8;
+    opacity: 90%;
+    padding: 5px;
+    text-transform:uppercase;
+    font-family: Anta;
+  }
+  .funnycontainer{
+    position: relative;
+      margin-bottom: 20px; 
+  }
+
+
+
+.address-runner{
+    border: 5px solid black;
+    border-radius:10px;
+    display:grid;
+    align-items: center;
+    margin-left:8.5em;
+    margin-right:8.5em;
+    margin-top: 2.5em;
+
+}
+.address-runner h1{
+    margin-left:1.5em;
+    font-family: Anta;
+}
+.address-runner h2{
+    margin-left:2.5em;
+    font-family: Antonio;
+}
+
+section >h1{
+    margin-left:6em;
+}
+.fineprint{
+    color: grey;
+    font-size:0.25em;
+    text-align:center;
+}
+
+
+.masthead3{
+    background-image: url("../images/home_billboard_postproduction.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 40vh;
+    
+  }
+  .masthead3 div{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .masthead3 div h1{
+    font-size: 3em;
+    color: #0e0e0e;
+    background-color:#f8f8f8;
+    opacity: 90%;
+    padding: 5px;
+    text-transform:uppercase;
+    font-family: Anta;
+  }
+
+  .crazyText{
+    margin-left:8.5em;
+    font-family: Antonio;
+
+  }
+  .fun-button{
+    margin-top:10.75em;
+
+  }
+  .funkyTown h1{
+    margin-left: 3.75em;
+    font-family: lessonFont; 
+  }
+
+.runner2{
+    text-align:center;
+   margin-bottom:2.5em;
+   margin-right:4.5em;
+}
+.runner2 > h1{
+    margin-right: 6.5em;
+    font-family: Anta;
+    font-weight:bold;
+}
+
+.runner2 > a{
+    font-family: Antonio;
+}
+
+.iframe{
+    border:none;
+    
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 1190px) {
+    .masthead div h1{
+        font-size: 2.8em;
+        text-align: center;
+        padding:0.25em;
+    }
+    .site-links li{
+        font-size:0.75em;
+    } 
+    .site-links{
+        margin-left:6.5em;
+        text-align:center;
+        
+    }
+    header menu nav li{
+        font-size:30px;
+      }
+      header div a img{
+        padding-left:10%;
+        padding-right:10%;
+      }
+    
+    
+}
+
+
+@media (max-width: 800px) {
+    .social-links {
+        display: none; 
+      }
+    .footer-section h3{
+        display:none;
+        padding-left:0;
+    }
+    .masthead > h1 {
+        font-size: 7.6em;
+    }
+    .cta{
+        width:40%;
+        
+    }
+    .cta >div{
+        display:grid;
+        width: 50%;
+        height:50%;
+    }
+    .ctaButton{
+        font-size: 1.5em;
+    }
+    .container {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .cta {
+      width: 90%; 
+      margin-bottom: 20px; 
+    }
+  
+    footer {
+      position: relative; 
+      margin-top: 20px; 
+    }
+    .footer-container {
+        width: 100%; 
+        padding-left: 2em;
+        padding-right: 2em;
+        box-sizing: border-box; 
+      }
+    
+      .footer-logo img {
+        margin-right: 10px;
+      }
+    
+      .footer-section {
+        margin: 0 1em;
+      }
+      header menu nav li{
+        font-size:30px;
+      }
+      header div a img{
+        padding-left:40%;
+        padding-right:10%;
+      }
+  }
+  @media (max-width:700px){
+    header nav menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+    
+      header nav menu li {
+        text-align: center; 
+        font-size: 0.8em; 
+      }
+
+  }
+  @media (max-width: 600px) {
+    .masthead > h1 {
+      font-size: 6em;
+    }
+    .ctaButton {
+      font-size: 1.2em;
+    }
+    header nav menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+    
+      header nav menu li {
+        text-align: center; 
+        font-size: 0.8em; 
+          }
+    
+      .masthead div h1 {
+        font-size: 2.5em; 
+      }
+      header div a img{
+        padding-left:20%;
+        padding-right:10%;
+      }
+      
+  }
+  
+  @media (max-width: 400px) {
+    .masthead > h1 {
+      font-size: 5em;
+    }
+    .ctaButton {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    .masthead > h1 {
+      font-size: 4em;
+    }
+    .ctaButton {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 200px) {
+    .masthead > h1 {
+      font-size: 3em;
+    }
+    .ctaButton {
+      font-size: 0.8em;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .masthead > h1 {
+      font-size: 4.5em;
+    }
+    .ctaButton {
+      font-size: 1em;
+    }
+    
+  }
+  @media (max-width: 450px) {
+    .footer-logo img {
+      margin-right: 5px; 
+    }
+  }
+
+
+
+
+
+@media (max-width: 768px) {
+    body {
+      font-size: 14px; 
+    }
+    
+   
+    .bodyparagraph img,
+    .bodyparagraph2 img {
+      max-width: 100%; 
+      display: block; 
+      margin: 0 auto; 
+      margin-bottom: 20px; 
+    }
+  
+    
+    .bodyparagraph img,
+    .bodyparagraph2 img {
+      float: none; 
+    }
+  
+   
+    .line,
+    .line2 {
+      display: none; 
+    }
+  
+
+    nav menu {
+      display: block;
+      text-align: center; 
+      margin-top: 20px; 
+    }
+  
+    nav menu li {
+      display: inline-block; 
+      margin-right: 10px; 
+    }
+  
+    
+  
+    
+    .masthead2 {
+      padding: 50px 0; 
+    }
+  
+    .masthead2 h1 {
+      font-size: 24px; 
+    }
+  
+   
+    footer {
+      padding: 20px;
+    }
+  
+    .footer-section {
+      text-align: center; 
+    }
+  }
+  @media (max-width: 1400px) {
+   
+    .bodyparagraph,
+    .bodyparagraph2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+   
+    .bodyparagraph img,
+    .bodyparagraph2 img {
+      max-width: 80%; 
+      margin-bottom: 20px; 
+    }
+  
+    
+    .bodyparagraph h2,
+    .bodyparagraph2 h2 {
+      margin: 0;
+    }
+    
+    .line,
+    .line2 {
+      display: none; 
+    }
+  
+  
+    .bodyparagraph iframe {
+      max-width: 100%; 
+      width: 100%; 
+      height: auto; 
+    }
+  }
+  
+  
+  @media (max-width: 1400px) {
+    
+    .bodyparagraph,
+    .bodyparagraph2,
+    .funnycontainer,
+    .runner2,
+    footer {
+      text-align: center;
+    }
+    .line{
+        width:0px;
+    }
+
+    
+  
+   
+    .logo-container {
+      display: flex;
+      justify-content: center;
+    }
+  
+   
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    .masthead2 {
+      text-align: center;
+    }
+ 
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 12px; 
+    }
+  }
+
+  
+  
+  
+ 
+
+
+    
+
+
+
